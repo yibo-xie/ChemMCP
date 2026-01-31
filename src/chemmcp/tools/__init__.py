@@ -32,7 +32,6 @@ _tool_module_map = {
     "Smiles2Cas": "smiles2cas",
     "SafetyCheck": "safety_check",
     "MoleculeModifier": "molecule_modifier",
-    "PythonExecutor": "python_executor",
     "MoleculeVisualizer": "molecule_visualizer",
 }
 

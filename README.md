@@ -1,149 +1,124 @@
 # ChemMCP
 
-<img src="site/assets/img/icon_text_logo.png" alt="ChemMCP Banner" style="zoom:20%;" />
+## 项目简介
 
-See our website and document at [osu-nlp-group.github.io/ChemMCP](https://osu-nlp-group.github.io/ChemMCP/).
+ChemMCP 是一个**全面、易用且可扩展的化学工具包，专为大型语言模型和AI助手设计**，兼容[模型上下文协议（MCP）](https://modelcontextprotocol.org/)。通过集成**涵盖有机化学、无机化学、物理化学和分析化学的强大工具**，ChemMCP**赋能通用AI模型具备专业化学能力**，使其能够执行分子分析、性质预测、反应合成、热力学计算和光谱模拟等任务，而无需进行特定领域的训练。ChemMCP 可以无缝集成到您的研究工作流中，用于数据处理、智能体应用和计算实验。
 
-Join our [Discord community](https://discord.gg/sfZ26Qt3) to discuss ChemMCP, get help, and build together!
+[MCP（模型上下文协议）](https://modelcontextprotocol.io/introduction) 是一个允许AI模型通过标准化接口访问外部工具和资源的框架。ChemMCP 利用此架构，弥合了通用AI模型与专业化学工具之间的鸿沟，实现了化学专业知识与AI工作流的无缝集成。
 
-The current ChemMCP tools are mostly extended and updated from our prior work [ChemToolAgent](https://osu-nlp-group.github.io/ChemToolAgent/). Please check it for the tools' benefits in chemistry tasks.
+具体而言，ChemMCP 提供以下关键特性：
 
-## What is this?
+- **🔌 为AI助手提供即插即用的化学工具**：ChemMCP工具可在几分钟内集成到任何[支持MCP的LLM客户端](https://github.com/punkpeye/awesome-mcp-clients)中，让有机、无机、物化、分析化学领域的研究者无需额外训练即可为LLM增强专业能力。
+- **🛠️ 支持自定义工作流的独立工具包**：凭借其解耦设计和统一接口，ChemMCP工具可以轻松导入到您的科学工作流中，用于处理数据、组装流水线步骤、进行计算实验或构建定制的智能体应用——通过MCP或Python皆可，任您选择。
+- **📦 模块化与可扩展设计**：添加新工具就像编写一个Python文件一样简单。所有工具都遵循一致的架构，确保接口清晰、易于维护。
+- **🧪 跨学科覆盖**：旨在满足有机合成、无机化合物分析、物理化学计算和分析光谱学的需求。
 
-ChemMCP is **an easy-to-use and extensible chemistry toolkit for LLMs and AI assistants**, compatible with the [Model Context Protocol (MCP)](https://modelcontextprotocol.org/). By integrating **powerful chemistry tools**, ChemMCP can **make general AI models capable of chemistry capabilities**, performing molecular analysis, property prediction, and reaction synthesis tasks, without requiring domain-specific training. ChemMCP can also be easily integrated in your research for data processing, agentic applications, and more.
+我们将持续在ChemMCP中添加和维护工具。**非常欢迎您的贡献，例如反馈意见、维护现有工具或添加新工具！**
 
-[MCP (Model Context Protocol)](https://modelcontextprotocol.io/introduction) is a framework that allows AI models to access external tools and resources through a standardized interface. ChemMCP leverages this architecture to bridge the gap between general-purpose AI models and specialized chemistry tools, enabling seamless integration of chemistry expertise into AI workflows.
+## 工具列表
 
-Specifically, ChemMCP provides the following key features:
+根据功能和化学子学科，工具分类如下：
 
-- **🔌 Plug-and-Play Chemistry Tools for AI Assistants**: ChemMCP tools can be integrated into any [MCP-enabled LLM clients](https://github.com/punkpeye/awesome-mcp-clients) in just minutes, allowing researchers to augment LLMs with chemistry capabilities without additional training.
-- **🛠️ Standalone Toolkit for Custom Workflows**: With its decoupled design and unified interfaces, ChemMCP tools can be easily imported into your workflow, to process data, assemble pipeline steps, or build bespoke agentic applications — via MCP or Python, whichever you prefer.
-- **🤖 Native RL Agent Framework**: ChemMCP natively supports multi-turn interactive loops between agents and tool, providing an ideal infrastructure and testbed for scientific tool-using agents.
-- **📦 Modular and Extensible Design**: Adding a new tool is as simple as writing a Python file (see [here](https://osu-nlp-group.github.io/ChemMCP/dev-guide/)). All tools follow a consistent schema, ensuring clear interfaces, easy maintenance, and automatic documentation.
+- **通用工具**：提供跨所有化学领域的广泛信息检索和网络搜索。
+- **分子工具**：提供与化学化合物及其性质相关的各种分析、预测和转换（适用于有机和无机分子）。
+- **反应工具**：预测化学反应产物，并为合成给定产物建议潜在反应物（有机和无机合成）。
+- **物理化学工具**：执行热力学计算、动力学模拟和量子化学性质预测。
+- **分析化学工具**：模拟光谱数据（核磁共振、红外、质谱）并辅助色谱分析。
 
-We will continue to add and maintain tools in ChemMCP. **You are more than welcome to contribute, such as giving us your feedback, maining existing tools, or adding new tools!**
+## 伦理与负责任使用声明
 
-## Get Started
+ChemMCP 是一个开源工具包，它将语言模型和智能体与化学工具及公开可用的化学数据相结合，以支持跨所有化学子学科的AI for Science研究。虽然ChemMCP提供了强大的功能，但必须承认其使用可能带来的潜在风险。
 
-[This document](https://osu-nlp-group.github.io/ChemMCP/get-started/) will help you quickly set up and start using ChemMCP.
+1.  **安全与责任**
 
-## Tool List
+    ChemMCP包含旨在帮助识别危险分子和反应的安全检查工具；但是，工具包本身并不强制使用这些工具。由于ChemMCP不是独立的智能体，而是一个开源资源，我们无法保证每个用户都会采用安全措施。
 
-Based on the functions, the tools can be divided into general tools, molecule tools, and reaction tools:
+    与ChemMCP配对的大型语言模型通常包含其自身的安全机制，通常会拒绝涉及非法或不道德应用的请求。尽管如此，用户仍须全权负责确保所有活动符合适用的安全规程、机构规定以及使用地所有司法管辖区的法律要求。
 
-- **General Tools**: Provide broad information retrieval and web searching.
-- **Molecule Tools**: Offer various analyses, predictions, and conversions related to chemical compounds and their properties.
-- **Reaction Tools**: Predict products of chemical reactions and suggest potential reactants for synthesizing given products.
+    由于ChemMCP仅访问公开可用的工具和数据，我们对任何危险或非法用途不承担责任。用户必须验证其工作流程是安全、合法且符合伦理的，特别是在处理反应性化合物、含能材料或受控物质时。
 
-Check the updated full list of tools [here](https://osu-nlp-group.github.io/ChemMCP/tools/).
+2.  **预期用途**
 
-## Citation
+    ChemMCP 仅提供给学术、工业和政府机构用于合法研究、教育和调查目的。
 
-If ChemMCP is valuable to your research or development, please kindly cite our work.
+    严禁将ChemMCP用于设计、制造或推荐有害物质（例如化学毒素、武器或非法药物）。任何试图利用该工具包进行恶意活动的行为都违反了我们的条款和伦理准则。
 
-```
-@misc{yu2025chemmcp,
-  author       = {Botao Yu and Huan Sun},
-  title        = {ChemMCP: An Easy-to-Use and Extensible Toolkit for Chemistry Agents},
-  year         = {2025},
-  url          = {https://osu-nlp-group.github.io/ChemMCP/},
-  note         = {2025-06-05-01},
-}
+3.  **限制与免责声明**
 
-@article{yu2024chemtoolagent,
-    title={ChemToolAgent: The Impact of Tools on Language Agents for Chemistry Problem Solving},
-    author={Botao Yu and Frazier N. Baker and Ziru Chen and Garrett Herb and Boyu Gou and Daniel Adu-Ampratwum and Xia Ning and Huan Sun},
-    journal={arXiv preprint arXiv:2411.07228},
-    year={2024}
-}
-```
+    ChemMCP不保证其输出的准确性、完整性或安全性。所有计算、预测和推断均“按原样”提供，不作任何形式的保证。用户应运用专业判断，并在适当时进行实验验证，特别是对于：
+    *   可能涉及危险中间体的合成路线
+    *   用于安全关键应用的物理性质预测
+    *   为监管决策提供信息的数据解析
 
+    对于因使用ChemMCP而产生的任何直接或间接后果（财务、法律或其他方面），我们概不负责。
 
-## Ethical and Resonsible Use Statement
+4.  **贡献与安全保障**
 
-ChemMCP is an open-source toolkit that integrates language models and agents with chemistry tools and publicly available chemical data to support AI for Science research. While ChemMCP offers powerful capabilities, it is essential to acknowledge potential risks associated with its use.
+    我们鼓励社区贡献，以增强ChemMCP的安全功能并促进负责任的使用。贡献者在引入新工具或数据源时，必须记录任何已识别的风险、潜在故障模式和缓解策略，特别是涉及以下内容的工具：
+    *   高能化合物或反应中间体
+    *   毒理学或环境影响预测
+    *   受控物质数据库
 
-1. **Safety and Responsibility**
+    在合并新功能之前，维护者应审查拟议的更改是否存在可能的滥用场景，并相应更新文档。
 
-   ChemMCP includes a safety-check tool designed to help identify hazardous molecules; however, the toolkit itself does not enforce its use. Because ChemMCP is not a standalone agent but rather an open-source resource, we cannot guarantee that every user will employ safety measures.
+5.  **用户协议**
 
-   Large language models paired with ChemMCP often incorporate their own safety mechanisms, which typically refuse requests involving illegal or unethical applications. Nonetheless, users bear full responsibility for ensuring that all activities comply with applicable safety protocols and legal requirements.
+    通过安装或调用ChemMCP，您同意：
 
-   As ChemMCP accesses only publicly available tools and data, we disclaim liability for any dangerous or illicit use. Users must verify that their workflows are safe, lawful, and ethically sound.
+    1.  在使用工具包时遵守所有适用的法律、法规、机构政策和职业道德准则。
+    2.  在处理潜在危险数据、化合物或反应条件时，应用合理的安全检查（包括人工和自动化检查）。
+    3.  避免任何可能助长有害物质或非法材料的创造、分发或使用的活动。
+    4.  承认在关键应用中，计算预测不能替代实验验证。
+    5.  对您使用ChemMCP及其部署产生的任何结果承担全部责任。
 
-2. **Intended Use**
+## 许可证
 
-   ChemMCP is provided solely for legitimate research, educational, and investigative purposes.
+ChemMCP 基于 [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) 分发。该工具包的实现严重依赖于开源项目——最引人注目的是 [RDKit](https://github.com/rdkit/rdkit)（BSD 3-Clause）和 [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)（MIT）。其他主要开源依赖项（其代码被全部或部分使用）以及任何必需的托管服务或软件均在下表中列出。使用ChemMCP及其工具，即表示您同意遵守所有引用的许可证和服务条款。
 
-   Under no circumstances should ChemMCP be used to design, manufacture, or recommend harmful substances (e.g., chemical toxins or weapons). Any attempt to exploit the toolkit for malicious ends violates our terms and ethical guidelines.
+| **工具名称** | **主要开源依赖** | **托管服务/软件** | **化学领域** |
+| :--- | :--- | :--- | :--- |
+| BbbpPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/有机化学 |
+| ForwardSynthesis | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [rxn4chemistry](https://github.com/rxn4chemistry/rxn4chemistry) (MIT) | [IBM RXN for Chemistry](https://rxn.app.accelerate.science/) | 有机合成 |
+| FunctionalGroups | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - | 有机化学 |
+| HivInhibitorPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/有机化学 |
+| Iupac2Smiles | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [molbloom](https://github.com/whitead/molbloom) (MIT), [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), [ChemSpace](https://chem-space.com/) | 通用化学 |
+| LogDPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 物理/药物化学 |
+| MoleculeAtomCount | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - | 通用化学 |
+| MoleculeCaptioner | [MolT5](https://github.com/blender-nlp/MolT5) (BSD 3-Clause) | - | 通用化学 |
+| MoleculeGenerator | [MolT5](https://github.com/blender-nlp/MolT5) (BSD 3-Clause) | - | 通用化学 |
+| MoleculeModifier | [synspace](https://github.com/whitead/synspace) (MIT) | - | 有机/合成化学 |
+| MoleculePrice | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [ChemSpace](https://chem-space.com/) | 通用化学 |
+| MoleculeSimilarity | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - | 通用化学 |
+| MoleculeSmilesCheck | - | - | 通用化学 |
+| MoleculeVisualizer | - | - | 通用化学 |
+| MoleculeWeight | - | - | 通用化学 |
+| Name2Smiles | [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | - | 通用化学 |
+| PatentCheck | [molbloom](https://github.com/whitead/molbloom) (MIT) | - | 通用化学 |
+| PubchemSearch | - | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | 通用化学 |
+| PubchemSearchQA | - | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), 自定义LLMs | 通用化学 |
+| ReactionSmilesCheck | - | - | 通用化学 |
+| Retrosynthesis | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [rxn4chemistry](https://github.com/rxn4chemistry/rxn4chemistry) (MIT) | [IBM RXN for Chemistry](https://rxn.app.accelerate.science/) | 有机合成 |
+| SafetyCheck | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), 自定义LLMs | 通用化学 |
+| Selfies2Smiles | [selfies](https://github.com/aspuru-guzik-group/selfies) (Apache License 2.0) | - | 计算化学 |
+| SideEffectPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/有机化学 |
+| Smiles2Cas | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | 通用化学 |
+| Smiles2Formula | - | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | 通用化学 |
+| Smiles2Iupac | [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | 通用化学 |
+| Smiles2Selfies | [selfies](https://github.com/aspuru-guzik-group/selfies) (Apache License 2.0) | - | 计算化学 |
+| SmilesCanonicalization | [LlaSMol](https://github.com/OSU-NLP-Group/LLM4Chem) (MIT) | - | 计算化学 |
+| SolubilityPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 物理化学 |
+| ToxicityPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/环境化学 |
+| WebSearch | [tavily-python](https://github.com/tavily-ai/tavily-python) (MIT) | [Tavily](https://www.tavily.com/) | 通用 |
 
-3. **Limitations and Disclaimer**
+**说明**：表中标记为 `-` 的单元格表示该工具由我们原创创建，除了RDKit和MCP之外不直接依赖其他开源软件，或不使用外部托管服务和软件。
 
-   ChemMCP does not guarantee the accuracy, completeness, or safety of its outputs. All computations and inferences are provided "as is," without warranties of any kind.
+**未来工具开发计划**：我们计划扩展ChemMCP，增加专门用于以下领域的工具：
+*   **无机化学**：配合物分析、晶体场理论计算、对称操作
+*   **物理化学**：热力学计算器、动力学模拟器、量子化学性质预测器
+*   **分析化学**：核磁/红外/质谱预测器、色谱保留时间估算器
 
-   We are not liable for any direct or indirect consequences—financial, legal, or otherwise—that arise from using ChemMCP. Users should independently validate results before applying them in critical or hazardous contexts.
+**免责声明**：
 
-4. **Contributions and Safeguards**
-
-   We encourage community contributions that enhance ChemMCP's safety features and promote responsible use. Contributors must document any identified risks, potential failure modes, and mitigation strategies when introducing new tools or data sources.
-
-   Before merging new functionality, maintainers should review proposed changes for possible misuse scenarios and update documentation accordingly.
-
-5. **User Agreement**
-
-   By installing or invoking ChemMCP, you agree to:
-
-   1. Use the toolkit in compliance with all applicable laws, regulations, and institutional policies.
-   2. Apply reasonable safety checks—both human and automated—when handling potentially hazardous data or compounds.
-   3. Refrain from any activity that could facilitate the creation, distribution, or use of harmful substances.
-   4. Accept full responsibility for your use of ChemMCP and any outcomes that result from its deployment.
-
-## License
-
-ChemMCP is distributed under the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/). The toolkit's implementation depends heavily on open-source projects—most notably [RDKit](https://github.com/rdkit/rdkit) (BSD 3-Clause) and the [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) (MIT). Additional main open-source dependencies (whose code is used in whole or in part) and any required hosted services or software are listed in the table below. By using ChemMCP and its tools, you agree to comply with all referenced licenses and terms of service.
-
-| **Tool Name**               | **Primary Open-Source Dependencies** | **Hosted Service / Software** |
-|-------------------------|-------|-------|
-| BbbpPredictor          | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - |
-| ForwardSynthesis       | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [rxn4chemistry](https://github.com/rxn4chemistry/rxn4chemistry) (MIT) | [IBM RXN for Chemistry](https://rxn.app.accelerate.science/) |
-| FunctionalGroups       | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - |
-| HivInhibitorPredictor  | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - |
-| Iupac2Smiles           | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [molbloom](https://github.com/whitead/molbloom) (MIT), [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), [ChemSpace](https://chem-space.com/) |
-| LogDPredictor          | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - |
-| MoleculeAtomCount      | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - |
-| MoleculeCaptioner      | [MolT5](https://github.com/blender-nlp/MolT5) (BSD 3-Clause) | - |
-| MoleculeGenerator      | [MolT5](https://github.com/blender-nlp/MolT5) (BSD 3-Clause) | - |
-| MoleculeModifier       | [synspace](https://github.com/whitead/synspace) (MIT) | - |
-| MoleculePrice          | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [ChemSpace](https://chem-space.com/) |
-| MoleculeSimilarity     | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - |
-| MoleculeSmilesCheck    | - | - |
-| MoleculeVisualizer     | - | - |
-| MoleculeWeight         | - | - |
-| Name2Smiles            | [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | - |
-| PatentCheck           | [molbloom](https://github.com/whitead/molbloom) (MIT) | - |
-| PubchemSearch         | - | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) |
-| PubchemSearchQA       | - | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), Custom LLMs |
-| PythonExecutor        | [Jupyter Notebook](https://github.com/jupyter/notebook) (BSD 3-Clause) | [docker](https://www.docker.com/) |
-| ReactionSmilesCheck   | - | - |
-| Retrosynthesis        | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [rxn4chemistry](https://github.com/rxn4chemistry/rxn4chemistry) (MIT) | [IBM RXN for Chemistry](https://rxn.app.accelerate.science/) |
-| SafetyCheck           | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), Custom LLMs |
-| Selfies2Smiles        | [selfies](https://github.com/aspuru-guzik-group/selfies) (Apache License 2.0) | - |
-| SideEffectPredictor   | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - |
-| Smiles2Cas            | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) |
-| Smiles2Formula        | - | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) |
-| Smiles2Iupac          | [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) |
-| Smiles2Selfies        | [selfies](https://github.com/aspuru-guzik-group/selfies) (Apache License 2.0) | - |
-| SmilesCanonicalization| [LlaSMol](https://github.com/OSU-NLP-Group/LLM4Chem) (MIT) | - |
-| SolubilityPredictor   | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - |
-| ToxicityPredictor     | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - |
-| WebSearch            | [tavily-python](https://github.com/tavily-ai/tavily-python) (MIT) | [Tavily](https://www.tavily.com/) |
-
-Note: The cells with `-` indicate that this tool is originally created by us and does not directly rely on OSS other than RDKit and MCP, or does not use external hosted services and software.
-
-
-
-**Disclaimer**:
-
-- Any open-source software dependency not explicitly identified in the table above—including any indirect or transitive dependencies introduced by packages such as RDKit or PyTorch—remains subject to the terms of its own license. For a complete inventory of all dependencies and their corresponding license obligations, users should consult the project's requirements.txt file or employ a license-compliance utility (for example, pip-licenses).
-- Hosted services and application programming interfaces (APIs) referenced herein—for instance, IBM RXN for Chemistry, PubChem, or externally hosted language models—are each governed by their own Terms of Service, Acceptable Use Policies, or equivalent contractual agreements. Users are responsible for reviewing and adhering to all applicable terms and conditions imposed by the providers of these external services.
-- Our software is constructed based on open-source code and data, and we respect their creators' ownership and intellectual property. Additionally, many tools are also based on some hosted services and software, and we believe their terms for use are compatible with our research purpose. In the above table, we have made our best effort to list their repositories/websites and provide their licenses. We welcome requests from the original authors or developers to modify or remove relevant tools if needed.
+*   上表中未明确指明的任何开源软件依赖项（包括由诸如RDKit、PyTorch或科学计算库等软件包引入的任何间接或传递依赖项）仍受其自身许可证条款的约束。对于所有依赖项及其相应的许可证义务的完整清单，用户应查阅项目的requirements.txt文件或使用许可证合规性工具（例如pip-licenses）。
+*   本文引用的托管服务和应用程序编程接口（API）——例如IBM RXN for Chemistry、PubChem或外部托管的语言模型——均受其自身的服务条款、可接受使用政策或等效合同协议的约束。用户有责任审查并遵守这些外部服务提供商规定的所有适用条款和条件。
+*   我们的软件基于开源代码和数据构建，我们尊重其创造者的所有权和知识产权。此外，许多工具也基于某些托管服务和软件，我们相信它们的使用条款与我们的研究目的兼容。在上表中，我们已尽最大努力列出了它们的代码库/网站并提供其许可证。如有需要，我们欢迎原作者或开发者提出修改或删除相关工具的请求。

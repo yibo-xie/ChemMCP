@@ -15,12 +15,6 @@ _tool_module_map = {
     "MoleculeAtomCount": "molecule_atom_count",
     "MoleculePrice": "molecule_price",
     "PatentCheck": "patent_check",
-    "SolubilityPredictor": "solubility_predictor",
-    "LogDPredictor": "logd_predictor",
-    "BbbpPredictor": "bbbp_predictor",
-    "ToxicityPredictor": "toxicity_predictor",
-    "HivInhibitorPredictor": "hiv_inhibitor_predictor",
-    "SideEffectPredictor": "side_effect_predictor",
     "Iupac2Smiles": "iupac2smiles",
     "Smiles2Iupac": "smiles2iupac",
     "Smiles2Formula": "smiles2formula",
@@ -33,6 +27,7 @@ _tool_module_map = {
     "SafetyCheck": "safety_check",
     "MoleculeModifier": "molecule_modifier",
     "MoleculeVisualizer": "molecule_visualizer",
+    "KcKpConverter": "kc_kp_converter",
 }
 
 __all__ = list(_tool_module_map.keys())

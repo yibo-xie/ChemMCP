@@ -77,12 +77,9 @@ ChemMCP 基于 [Apache License 2.0](https://choosealicense.com/licenses/apache-2
 
 | **工具名称** | **主要开源依赖** | **托管服务/软件** | **化学领域** |
 | :--- | :--- | :--- | :--- |
-| BbbpPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/有机化学 |
 | ForwardSynthesis | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [rxn4chemistry](https://github.com/rxn4chemistry/rxn4chemistry) (MIT) | [IBM RXN for Chemistry](https://rxn.app.accelerate.science/) | 有机合成 |
 | FunctionalGroups | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - | 有机化学 |
-| HivInhibitorPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/有机化学 |
 | Iupac2Smiles | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [molbloom](https://github.com/whitead/molbloom) (MIT), [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), [ChemSpace](https://chem-space.com/) | 通用化学 |
-| LogDPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 物理/药物化学 |
 | MoleculeAtomCount | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | - | 通用化学 |
 | MoleculeCaptioner | [MolT5](https://github.com/blender-nlp/MolT5) (BSD 3-Clause) | - | 通用化学 |
 | MoleculeGenerator | [MolT5](https://github.com/blender-nlp/MolT5) (BSD 3-Clause) | - | 通用化学 |
@@ -100,14 +97,11 @@ ChemMCP 基于 [Apache License 2.0](https://choosealicense.com/licenses/apache-2
 | Retrosynthesis | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT), [rxn4chemistry](https://github.com/rxn4chemistry/rxn4chemistry) (MIT) | [IBM RXN for Chemistry](https://rxn.app.accelerate.science/) | 有机合成 |
 | SafetyCheck | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/), 自定义LLMs | 通用化学 |
 | Selfies2Smiles | [selfies](https://github.com/aspuru-guzik-group/selfies) (Apache License 2.0) | - | 计算化学 |
-| SideEffectPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/有机化学 |
 | Smiles2Cas | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | 通用化学 |
 | Smiles2Formula | - | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | 通用化学 |
 | Smiles2Iupac | [PubChemPy](https://github.com/mcs07/PubChemPy) (MIT) | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | 通用化学 |
 | Smiles2Selfies | [selfies](https://github.com/aspuru-guzik-group/selfies) (Apache License 2.0) | - | 计算化学 |
 | SmilesCanonicalization | [LlaSMol](https://github.com/OSU-NLP-Group/LLM4Chem) (MIT) | - | 计算化学 |
-| SolubilityPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 物理化学 |
-| ToxicityPredictor | [Uni-Mol](https://github.com/deepmodeling/Uni-Mol) (MIT), [Uni-Core](https://github.com/dptech-corp/Uni-Core) (MIT) | - | 药物/环境化学 |
 | WebSearch | [tavily-python](https://github.com/tavily-ai/tavily-python) (MIT) | [Tavily](https://www.tavily.com/) | 通用 |
 
 **说明**：表中标记为 `-` 的单元格表示该工具由我们原创创建，除了RDKit和MCP之外不直接依赖其他开源软件，或不使用外部托管服务和软件。

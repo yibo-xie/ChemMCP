@@ -15,56 +15,67 @@
 
 ### 2. 克隆 Fork
 
+```bash
 git clone https://github.com/<your_name>/<repo>.git
 cd <repo>
+```
 
 ---
 
 ### 3. 添加上游仓库（必须）
 
+```bash
 git remote add upstream https://github.com/<org>/<repo>.git
+```
 
 验证：
-
+```bash
 git remote -v
+```
 
 ---
 
 ### 4. 同步最新主分支
 
+```bash
 git fetch upstream
 git checkout main
 git merge upstream/main
 git push origin main
+```
 
 ---
 
 ### 5. 创建功能分支（禁止在 main 开发）
 
+```bash
 git checkout -b feature/<name>
+```
 
 命名规范：
-
+```bash
 feature/<功能名>
 fix/<问题名>
 refactor/<模块名>
 docs/<文档名>
+```
 
 ---
 
 ### 6. 开发并提交
 
+```bash
 git add .
 git commit -m "feat: add xxx"
-
-提交规范见：
-docs/commit-convention.md
+```
 
 ---
 
 ### 7. 推送到 Fork
 
+```bash
 git push origin feature/<name>
+```
 
 ---
 
@@ -83,18 +94,22 @@ git push origin feature/<name>
 
 根据 reviewer 意见修改：
 
+```bash
 git add .
 git commit -m "fix: address review comments"
 git push origin feature/<name>
+```
 
 ---
 
 ## 🔁 同步主仓库（建议每天执行）
 
+```bash
 git fetch upstream
 git checkout main
 git merge upstream/main
 git push origin main
+```
 
 ---
 
@@ -110,16 +125,18 @@ git push origin main
 
 ## 🧪 冲突解决
 
+```bash
 git fetch upstream
 git checkout feature/<name>
 git merge upstream/main
+```
 
 手动解决冲突后：
-
+```bash
 git add .
 git commit -m "merge upstream main"
 git push origin feature/<name>
-
+```
 ---
 
 感谢你的贡献 🚀

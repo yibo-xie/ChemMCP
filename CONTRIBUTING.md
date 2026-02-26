@@ -35,18 +35,18 @@ git remote -v
 
 ---
 
-### 4. 同步最新主分支
+### 4. 同步上游最新变更
 
 ```bash
 git fetch upstream
-git checkout main
-git merge upstream/main
-git push origin main
+git checkout dev
+git merge upstream/dev
+git push origin dev
 ```
 
 ---
 
-### 5. 创建功能分支（禁止在 main 开发）
+### 5. 创建功能分支（禁止在 main 和 dev 开发）
 
 ```bash
 git checkout -b feature/<name>
@@ -106,9 +106,9 @@ git push origin feature/<name>
 
 ```bash
 git fetch upstream
-git checkout main
-git merge upstream/main
-git push origin main
+git checkout dev
+git merge upstream/dev
+git push origin dev
 ```
 
 ---
@@ -128,7 +128,7 @@ git push origin main
 ```bash
 git fetch upstream
 git checkout feature/<name>
-git merge upstream/main
+git merge upstream/dev
 ```
 
 手动解决冲突后：

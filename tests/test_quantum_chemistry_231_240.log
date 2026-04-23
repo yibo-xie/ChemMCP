@@ -1,0 +1,204 @@
+[04/23/26 22:52:30] INFO     HydrogenAtomOrbitals: hydrogen_atom_orbitals.py:338
+                             1s, E=-13.605693eV,                                
+                             r_mp=1.000a₀                                       
+                    INFO     HydrogenAtomOrbitals: hydrogen_atom_orbitals.py:338
+                             2p, E=-3.401423eV,                                 
+                             r_mp=5.000a₀                                       
+                    INFO     HydrogenAtomOrbitals: hydrogen_atom_orbitals.py:338
+                             2p, E=-3.401423eV,                                 
+                             r_mp=5.000a₀                                       
+                    INFO     HydrogenAtomOrbitals: hydrogen_atom_orbitals.py:338
+                             1s, E=-54.422772eV,                                
+                             r_mp=0.500a₀                                       
+                    INFO     SchrodingerSolver1d:   schrodinger_solver_1d.py:377
+                             infinite_well, 3                                   
+                             levels, E0=0.376016eV                              
+                    INFO     SchrodingerSolver1d:   schrodinger_solver_1d.py:377
+                             harmonic, 3 levels,                                
+                             E0=-13894.189527eV                                 
+                    INFO     SchrodingerSolver1d:   schrodinger_solver_1d.py:377
+                             infinite_well, 2                                   
+                             levels, E0=0.376016eV                              
+[04/23/26 22:52:31] INFO     SchrodingerSolver1d:   schrodinger_solver_1d.py:377
+                             finite_well, 3 levels,                             
+                             E0=-1554.810793eV                                  
+                    INFO     VariationalMethod:        variational_method.py:411
+                             harmonic/gaussian,                                 
+                             E_var=1.090437eV,                                  
+                             α=2.8619e+19                                       
+                    INFO     VariationalMethod:        variational_method.py:411
+                             infinite_well/cosine,                              
+                             E_var=0.376422eV,                                  
+                             α=1.5000e+01                                       
+                    INFO     VariationalMethod:        variational_method.py:411
+                             harmonic/gaussian,                                 
+                             E_var=1.090437eV,                                  
+                             α=2.8619e+19                                       
+                    INFO     VariationalMethod:        variational_method.py:411
+                             harmonic/gaussian,                                 
+                             E_var=1.090437eV,                                  
+                             α=2.8619e+19                                       
+                    INFO     PerturbationTheory:      perturbation_theory.py:472
+                             harmonic_perturbed,                                
+                             E_corr=1.0904366009eV                              
+                    INFO     PerturbationTheory:      perturbation_theory.py:472
+                             two_level, E_corr=N/AeV                            
+                    INFO     PerturbationTheory:      perturbation_theory.py:472
+                             hydrogen_stark,                                    
+                             E_corr=-81068998.6352345                           
+                             6eV                                                
+                    INFO     PerturbationTheory:      perturbation_theory.py:472
+                             harmonic_perturbed,                                
+                             E_corr=1.0904366009eV                              
+                    INFO     MolecularOrbitalDi molecular_orbital_diagram.py:468
+                             agram: O2, BO=2.0,                                 
+                             paramagnetic,                                      
+                             gap=8.5eV                                          
+                    INFO     MolecularOrbitalDi molecular_orbital_diagram.py:468
+                             agram: N2, BO=3.0,                                 
+                             diamagnetic,                                       
+                             gap=22.0eV                                         
+                    INFO     MolecularOrbitalDi molecular_orbital_diagram.py:468
+                             agram: H2O,                                        
+                             BO=3.0,                                            
+                             diamagnetic,                                       
+                             gap=18.5eV                                         
+                    INFO     MolecularOrbitalDi molecular_orbital_diagram.py:468
+                             agram: O2, BO=2.0,                                 
+                             paramagnetic,                                      
+                             gap=8.5eV                                          
+                    INFO     HuckelMethod: ethene (n=2,     huckel_method.py:360
+                             linear), E_π=2.0000α +                             
+                             2.0000β, deloc=0.0000β                             
+                    INFO     HuckelMethod: benzene (n=6,    huckel_method.py:360
+                             cyclic), E_π=4.0000α +                             
+                             4.0000β, deloc=-2.0000β                            
+                    INFO     HuckelMethod: butadiene (n=4,  huckel_method.py:360
+                             linear), E_π=4.4721α +                             
+                             4.4721β, deloc=0.4721β                             
+                    INFO     HuckelMethod: benzene (n=6,    huckel_method.py:360
+                             cyclic), E_π=4.0000α +                             
+                             4.0000β, deloc=-2.0000β                            
+                    INFO     ElectronDensityPlot electron_density_plotter.py:333
+                             ter: 1s,                                           
+                             r_mp=0.010a₀                                       
+                    INFO     ElectronDensityPlot electron_density_plotter.py:333
+                             ter: 2p,                                           
+                             r_mp=1.949a₀                                       
+                    INFO     ElectronDensityPlot electron_density_plotter.py:333
+                             ter: 1s,                                           
+                             r_mp=0.010a₀                                       
+                    INFO     ElectronDensityPlot electron_density_plotter.py:333
+                             ter: 1s,                                           
+                             r_mp=0.010a₀                                       
+                    INFO     SpinOrbitCoupling: Na    spin_orbit_coupling.py:240
+                             3p, ζ=17.20cm⁻¹,                                   
+                             ΔE=25.7940cm⁻¹                                     
+                    INFO     SpinOrbitCoupling: Na    spin_orbit_coupling.py:240
+                             3s, ζ=17.20cm⁻¹,                                   
+                             ΔE=0.0000cm⁻¹                                      
+                    INFO     SpinOrbitCoupling: Na    spin_orbit_coupling.py:240
+                             3p, ζ=17.20cm⁻¹,                                   
+                             ΔE=25.7940cm⁻¹                                     
+                    INFO     SpinOrbitCoupling: Na    spin_orbit_coupling.py:240
+                             3p, ζ=17.20cm⁻¹,                                   
+                             ΔE=25.7940cm⁻¹                                     
+                    INFO     SelectionRulesChecke selection_rules_checker.py:398
+                             r: electric_dipole,                                
+                             allowed=True                                       
+                    INFO     SelectionRulesChecke selection_rules_checker.py:398
+                             r: electric_dipole,                                
+                             allowed=False                                      
+                    INFO     SelectionRulesChecke selection_rules_checker.py:398
+                             r: rotational,                                     
+                             allowed=True                                       
+                    INFO     SelectionRulesChecke selection_rules_checker.py:398
+                             r: raman,                                          
+                             allowed=True                                       
+                    INFO     SelectionRulesChecke selection_rules_checker.py:398
+                             r: electric_dipole,                                
+                             allowed=True                                       
+                    INFO     TunnelingProbability:  tunneling_probability.py:438
+                             rectangular,                                       
+                             T=1.5253e-02                                       
+                    INFO     TunnelingProbability:  tunneling_probability.py:438
+                             rectangular,                                       
+                             T=8.5761e-01                                       
+                    INFO     TunnelingProbability:  tunneling_probability.py:438
+                             alpha_decay,                                       
+                             T=6.3065e-16                                       
+                    INFO     TunnelingProbability:  tunneling_probability.py:438
+                             rectangular,                                       
+                             T=0.0000e+00                                       
+                    INFO     TunnelingProbability:  tunneling_probability.py:438
+                             rectangular,                                       
+                             T=1.5253e-02                                       
+============================================================
+Testing Quantum Chemistry Tools (#231-240)
+============================================================
+
+🧪 #231 HydrogenAtomOrbitals
+  ✅ 231: H 1s orbital energy & nodes
+  ✅ 231: H 2p orbital
+  ✅ 231: Text interface parsing
+  ✅ 231: He+ (Z=2) energy scaling
+
+🧪 #232 SchrodingerSolver1d
+  ✅ 232: Infinite square well ground state
+  ✅ 232: Harmonic oscillator (3 levels)
+  ✅ 232: Text interface
+  ✅ 232: Finite well
+
+🧪 #233 VariationalMethod
+  ✅ 233: HO with Gaussian trial function
+  ✅ 233: Infinite well with cosine (exact)
+  ✅ 233: Text interface
+  ✅ 233: Virial theorem check
+
+🧪 #234 PerturbationTheory
+  ✅ 234: Harmonic oscillator quartic perturbation
+  ✅ 234: Two-level system
+  ✅ 234: Hydrogen Stark effect (E1=0)
+  ✅ 234: Text interface
+
+🧪 #235 MolecularOrbitalDiagram
+  ✅ 235: O2 bond order=2, paramagnetic
+  ✅ 235: N2 bond order=3, diamagnetic
+  ✅ 235: H2O polyatomic MO
+  ✅ 235: Text interface
+
+🧪 #236 HuckelMethod
+  ✅ 236: Ethene π system
+  ✅ 236: Benzene aromatic cyclic
+  ✅ 236: Butadiene delocalization energy
+  ✅ 236: Text interface
+
+🧪 #237 ElectronDensityPlotter
+  ✅ 237: 1s radial density distribution
+  ✅ 237: 2p radial density
+  ✅ 237: Isosurface calculation
+  ✅ 237: Text interface
+
+🧪 #238 SpinOrbitCoupling
+  ✅ 238: Na 3p spin-orbit splitting
+  ✅ 238: s-orbital (single j level)
+  ✅ 238: Term symbols ^{2S+1}L_J
+  ✅ 238: Text interface
+
+🧪 #239 SelectionRulesChecker
+  ✅ 239: E1 1s→2p allowed ✓
+  ✅ 239: E1 1s→2s forbidden ✗ (Δl=0)
+  ✅ 239: Rotational ΔJ=1 allowed
+  ✅ 239: Raman ΔJ=2 allowed (S branch)
+  ✅ 239: Text interface
+
+🧪 #240 TunnelingProbability
+  ✅ 240: Rectangular barrier tunneling (0<T<1)
+  ✅ 240: Above-barrier transmission
+  ✅ 240: Alpha decay (extremely small T)
+  ✅ 240: Zero energy (T=0)
+  ✅ 240: Text interface
+
+============================================================
+Results: 42/42 passed, 0 failed
+============================================================

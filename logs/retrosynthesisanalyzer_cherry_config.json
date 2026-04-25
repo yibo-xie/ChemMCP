@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "RetrosynthesisAnalyzer": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RetrosynthesisAnalyzer"
+      ]
+    }
+  }
+}

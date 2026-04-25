@@ -1,0 +1,124 @@
+{
+  "mcpServers": {
+    "ChemMCP_91_RadioactiveDecay": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RadioactiveDecay"
+      ]
+    },
+    "ChemMCP_92_HalfLifeCalculation": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "HalfLifeCalculation"
+      ]
+    },
+    "ChemMCP_93_NuclearEquationBalance": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "NuclearEquationBalance"
+      ]
+    },
+    "ChemMCP_94_BindingEnergy": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BindingEnergy"
+      ]
+    },
+    "ChemMCP_95_MassDefect": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "MassDefect"
+      ]
+    },
+    "ChemMCP_96_DecaySeries": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "DecaySeries"
+      ]
+    },
+    "ChemMCP_97_GetPhysicalConstant": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GetPhysicalConstant"
+      ]
+    },
+    "ChemMCP_98_UnitConversion": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "UnitConversion"
+      ]
+    },
+    "ChemMCP_99_SignificantFigures": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SignificantFigures"
+      ]
+    },
+    "ChemMCP_100_DimensionalAnalysis": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "DimensionalAnalysis"
+      ]
+    }
+  }
+}

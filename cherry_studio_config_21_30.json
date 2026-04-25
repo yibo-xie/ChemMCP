@@ -1,0 +1,232 @@
+{
+  "mcpServers": {
+    "ChemMCP": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "-m",
+        "chemmcp"
+      ],
+      "env": {
+        "PYTHONPATH": "/home/wave/ChemMCP/src"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "determine_point_group",
+      "description": "Determine the point group symmetry of a molecule given its molecular formula or SMILES.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "molecule": {
+            "type": "str",
+            "description": "Molecule identifier: SMILES string, molecular formula, or common name (e.g., 'H2O', 'CCO', 'benzene', 'CH4')."
+          }
+        },
+        "required": [
+          "molecule"
+        ]
+      }
+    },
+    {
+      "name": "query_coordination_geometry",
+      "description": "Query and predict coordination geometry for complexes based on coordination number, metal center, ligands, and VSEPR/CFSE considerations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "coordination_number": {
+            "type": "int",
+            "description": "Coordination number (CN) of the complex, e.g., 2, 4, 5, 6."
+          },
+          "metal_ion": {
+            "type": "str",
+            "description": "Metal ion symbol (e.g., 'Fe2+', 'Cu2+', 'Co3+'). Optional but improves accuracy."
+          },
+          "ligand_type": {
+            "type": "str",
+            "description": "Ligand type or description (e.g., 'strong field', 'weak field', 'bidentate', 'Cl-', 'NH3'). Optional."
+          },
+          "electron_config": {
+            "type": "str",
+            "description": "d-electron count or config (e.g., 'd6', 'd8', 'low-spin', 'high-spin'). Optional."
+          }
+        },
+        "required": [
+          "coordination_number",
+          "metal_ion",
+          "ligand_type",
+          "electron_config"
+        ]
+      }
+    },
+    {
+      "name": "balance_equation",
+      "description": "Balance chemical equations for ordinary reactions using algebraic matrix method.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "equation": {
+            "type": "str",
+            "description": "Unbalanced chemical equation string, e.g., 'H2+O2=H2O', 'Fe+O2=Fe2O3', 'C6H12O6+O2=CO2+H2O'. Use '=' or '→' as separator."
+          }
+        },
+        "required": [
+          "equation"
+        ]
+      }
+    },
+    {
+      "name": "balance_redox",
+      "description": "Balance redox reaction equations using the half-reaction method (ion-electron method). Supports acidic and basic media.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "equation": {
+            "type": "str",
+            "description": "Unbalanced redox equation string, e.g., 'MnO4- + Fe2+ + H+ = Mn2+ + Fe3+ + H2O'."
+          },
+          "medium": {
+            "type": "str",
+            "description": "Reaction medium: 'acidic' (default) or 'basic' (or 'alkaline')."
+          }
+        },
+        "required": [
+          "equation",
+          "medium"
+        ]
+      }
+    },
+    {
+      "name": "identify_reaction_type",
+      "description": "Identify the type(s) of a chemical reaction from its equation string.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "equation": {
+            "type": "str",
+            "description": "Chemical equation string (balanced or unbalanced), e.g., 'MnO4- + 5Fe2+ + 8H+ = Mn2+ + 5Fe3+ + 4H2O' or 'H2+O2=H2O'."
+          }
+        },
+        "required": [
+          "equation"
+        ]
+      }
+    },
+    {
+      "name": "predict_products",
+      "description": "Predict the products of a chemical reaction given the reactants and optional conditions.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reactants": {
+            "type": "str",
+            "description": "Reactant species separated by '+', e.g., 'NaCl + AgNO3' or 'CH4 + O2' or 'Zn + H2SO4'."
+          },
+          "conditions": {
+            "type": "str",
+            "description": "Optional reaction conditions: 'heat', 'catalyst', 'light', 'electrolysis', 'acidic', 'basic', 'dilute', 'concentrated', etc."
+          }
+        },
+        "required": [
+          "reactants",
+          "conditions"
+        ]
+      }
+    },
+    {
+      "name": "get_standard_potential",
+      "description": "Query standard electrode potential (E°) for a given redox half-reaction or couple.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "str",
+            "description": "Half-reaction query: species name, formula, or redox couple (e.g., 'Cu2+/Cu', 'Fe3+/Fe2+', 'MnO4-/Mn2+', 'Zn2+/Zn', 'O2/H2O')."
+          },
+          "as_oxidation": {
+            "type": "bool",
+            "description": "If True, return oxidation potential (E°ox = -E°red). Default returns reduction potential."
+          }
+        },
+        "required": [
+          "query",
+          "as_oxidation"
+        ]
+      }
+    },
+    {
+      "name": "calculate_cell_potential",
+      "description": "Calculate the standard or non-standard cell potential (EMF) of a galvanic/voltaic cell given cathode and anode half-reactions.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cathode": {
+            "type": "str",
+            "description": "Cathode half-reaction (reduction): species name or E° value in V (e.g., 'Cu2+/Cu', '0.34')."
+          },
+          "anode": {
+            "type": "str",
+            "description": "Anode half-reaction (oxidation): species name or E° value in V (e.g., 'Zn2+/Zn', '-0.76')."
+          },
+          "n": {
+            "type": "int",
+            "description": "Number of electrons transferred in the balanced overall reaction."
+          }
+        },
+        "required": [
+          "cathode",
+          "anode",
+          "n"
+        ]
+      }
+    },
+    {
+      "name": "nernst_equation",
+      "description": "Calculate non-standard cell/electrode potential using the Nernst equation. Supports both code (numeric parameters) and text (string) interfaces.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "E0": {
+            "type": "float",
+            "description": "Standard electrode potential E° in Volts."
+          },
+          "n": {
+            "type": "int",
+            "description": "Number of electrons transferred in the half-reaction or overall reaction."
+          },
+          "T": {
+            "type": "float",
+            "description": "Temperature in Kelvin (K). Default: 298.15 K (25°C)."
+          },
+          "Q": {
+            "type": "float",
+            "description": "Reaction quotient Q (dimensionless). Default: 1.0 (standard conditions)."
+          }
+        },
+        "required": [
+          "E0",
+          "n",
+          "T",
+          "Q"
+        ]
+      }
+    },
+    {
+      "name": "identify_oxidizing_agent",
+      "description": "Identify the oxidizing agent and reducing agent in a redox reaction, including oxidation state changes and electron transfer details.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "equation": {
+            "type": "str",
+            "description": "Chemical equation string (balanced or unbalanced), e.g., 'MnO4- + 5Fe2+ + 8H+ = Mn2+ + 5Fe3+ + 4H2O' or 'H2 + CuO = Cu + H2O' or 'Cl2 + 2NaI = 2NaCl + I2'."
+          }
+        },
+        "required": [
+          "equation"
+        ]
+      }
+    }
+  ]
+}

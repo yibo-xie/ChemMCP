@@ -1,0 +1,272 @@
+{
+  "mcpServers": {
+    "ChemMCP_91_100": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "-m",
+        "chemmcp"
+      ],
+      "env": {
+        "PYTHONPATH": "/home/wave/ChemMCP/src"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "identify_decay_type",
+      "description": "Identify the primary radioactive decay type (alpha, beta-minus, beta-plus, or gamma) for a given radionuclide.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "nuclide": {
+            "type": "str",
+            "description": "The nuclide identifier (e.g., 'U-238', 'C-14', 'Co-60')."
+          }
+        },
+        "required": [
+          "nuclide"
+        ]
+      }
+    },
+    {
+      "name": "calculate_half_life",
+      "description": "Calculate radioactive decay parameters: remaining amount, decay constant, elapsed time, or initial amount using half-life equations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "calc_type": {
+            "type": "str",
+            "description": "Type of calculation."
+          },
+          "half_life": {
+            "type": "float",
+            "description": "Half-life of the nuclide."
+          },
+          "initial_amount": {
+            "type": "float",
+            "description": "Initial quantity."
+          },
+          "time_elapsed": {
+            "type": "float",
+            "description": "Time elapsed."
+          },
+          "remaining_amount": {
+            "type": "float",
+            "description": "Remaining quantity after decay."
+          },
+          "decay_constant": {
+            "type": "float",
+            "description": "Decay constant lambda."
+          }
+        },
+        "required": [
+          "calc_type",
+          "half_life",
+          "initial_amount",
+          "time_elapsed",
+          "remaining_amount",
+          "decay_constant"
+        ]
+      }
+    },
+    {
+      "name": "balance_nuclear_equation",
+      "description": "Balance nuclear reaction equations by ensuring conservation of mass number and atomic number.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reactants": {
+            "type": "str",
+            "description": "Space-separated reactant nuclides: 'U-235 n'."
+          },
+          "products": {
+            "type": "str",
+            "description": "Space-separated product nuclides: 'Ba-141 Kr-92 3n'. Coefficients can be prefixed."
+          }
+        },
+        "required": [
+          "reactants",
+          "products"
+        ]
+      }
+    },
+    {
+      "name": "calculate_binding_energy",
+      "description": "Calculate nuclear binding energy and binding energy per nucleon for a given nuclide.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "nuclide": {
+            "type": "str",
+            "description": "Nuclide identifier (e.g., 'Fe-56', 'He-4')."
+          },
+          "custom_mass_amu": {
+            "type": "float",
+            "description": "Custom atomic mass in u (0=use database)."
+          },
+          "output_unit": {
+            "type": "str",
+            "description": "Output unit: 'MeV', 'J', or 'eV'."
+          }
+        },
+        "required": [
+          "nuclide",
+          "custom_mass_amu",
+          "output_unit"
+        ]
+      }
+    },
+    {
+      "name": "calculate_mass_defect",
+      "description": "Calculate nuclear mass defect and its energy equivalent for a given nuclide.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "nuclide": {
+            "type": "str",
+            "description": "Nuclide identifier (e.g., 'Fe-56', 'He-4')."
+          },
+          "custom_mass_amu": {
+            "type": "float",
+            "description": "Custom atomic mass in u (0=use database)."
+          }
+        },
+        "required": [
+          "nuclide",
+          "custom_mass_amu"
+        ]
+      }
+    },
+    {
+      "name": "query_decay_series",
+      "description": "Query radioactive decay series (Uranium-238, Thorium-232, Uranium-235) showing complete decay chains with nuclides, decay modes, and half-lives.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "series_name": {
+            "type": "str",
+            "description": "Name of the decay series: 'uranium-238', 'thorium-232', 'uranium-235', or 'all'."
+          },
+          "format_type": {
+            "type": "str",
+            "description": "Output format: 'summary' (brief overview) or 'detailed' (full chain)."
+          }
+        },
+        "required": [
+          "series_name",
+          "format_type"
+        ]
+      }
+    },
+    {
+      "name": "get_physical_constant",
+      "description": "Query physical constants used in chemistry and physics: Avogadro number, gas constant, Faraday constant, Planck constant, etc.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "constant_name": {
+            "type": "str",
+            "description": "Name or symbol of the constant to query (e.g., 'NA', 'R', 'F', 'h', 'c', 'all')."
+          }
+        },
+        "required": [
+          "constant_name"
+        ]
+      }
+    },
+    {
+      "name": "convert_unit",
+      "description": "Convert between common chemistry units: length, mass, temperature, volume, pressure, energy, concentration, time.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "float",
+            "description": "Numerical value to convert."
+          },
+          "from_unit": {
+            "type": "str",
+            "description": "Source unit (e.g., 'atm', 'cal', 'eV', 'nm', 'L')."
+          },
+          "to_unit": {
+            "type": "str",
+            "description": "Target unit (e.g., 'Pa', 'J', 'MeV', 'pm', 'mL')."
+          }
+        },
+        "required": [
+          "value",
+          "from_unit",
+          "to_unit"
+        ]
+      }
+    },
+    {
+      "name": "handle_significant_figures",
+      "description": "Handle significant figures: count sig figs, round to N sig figs, convert to scientific notation.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "str",
+            "description": "Operation: 'count', 'round', 'scientific', 'add', 'subtract', 'multiply', 'divide'."
+          },
+          "value_a": {
+            "type": "str",
+            "description": "First value as string."
+          },
+          "value_b": {
+            "type": "str",
+            "description": "Second value (for arithmetic)."
+          },
+          "n_sig_figs": {
+            "type": "int",
+            "description": "Number of significant figures for rounding."
+          }
+        },
+        "required": [
+          "operation",
+          "value_a",
+          "value_b",
+          "n_sig_figs"
+        ]
+      }
+    },
+    {
+      "name": "analyze_dimensions",
+      "description": "Perform dimensional analysis: query dimensions, check equation consistency, derive unknown dimensions.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "str",
+            "description": "Operation: 'query', 'check', or 'derive'."
+          },
+          "quantity": {
+            "type": "str",
+            "description": "Quantity name for 'query'."
+          },
+          "left_side": {
+            "type": "str",
+            "description": "Space-separated left-side quantities for 'check'."
+          },
+          "right_side": {
+            "type": "str",
+            "description": "Space-separated right-side quantities for 'check'."
+          },
+          "expression": {
+            "type": "str",
+            "description": "Expression string for 'derive', e.g., 'force * velocity / area'."
+          }
+        },
+        "required": [
+          "operation",
+          "quantity",
+          "left_side",
+          "right_side",
+          "expression"
+        ]
+      }
+    }
+  ]
+}

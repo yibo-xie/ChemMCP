@@ -1,0 +1,124 @@
+{
+  "mcpServers": {
+    "IsotopePatternGenerator": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "IsotopePatternGenerator"
+      ]
+    },
+    "UvVisPredictor": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "UvVisPredictor"
+      ]
+    },
+    "SpectrumToStructure": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SpectrumToStructure"
+      ]
+    },
+    "DeptInterpreter": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "DeptInterpreter"
+      ]
+    },
+    "CosyNoesyGuide": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CosyNoesyGuide"
+      ]
+    },
+    "RetrosynthesisAnalyzer": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RetrosynthesisAnalyzer"
+      ]
+    },
+    "SynthonIdentifier": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SynthonIdentifier"
+      ]
+    },
+    "DisconnectionSuggester": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "DisconnectionSuggester"
+      ]
+    },
+    "FunctionalGroupInterconversion": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "FunctionalGroupInterconversion"
+      ]
+    },
+    "CarbonChainBuilder": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CarbonChainBuilder"
+      ]
+    }
+  }
+}

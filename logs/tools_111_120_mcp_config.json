@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "StereoisomerCounter": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "StereoisomerCounter"]
+    },
+    "MesoCompoundChecker": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "MesoCompoundChecker"]
+    },
+    "RingSystemAnalyzer": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "RingSystemAnalyzer"]
+    },
+    "AromaticSystemDetector": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "AromaticSystemDetector"]
+    },
+    "TautomerGenerator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "TautomerGenerator"]
+    },
+    "Sn1Mechanism": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "Sn1Mechanism"]
+    },
+    "Sn2Mechanism": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "Sn2Mechanism"]
+    },
+    "E1Mechanism": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "E1Mechanism"]
+    },
+    "E2Mechanism": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "E2Mechanism"]
+    },
+    "ElectrophilicAddition": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": ["--directory", "/home/wave/ChemMCP", "run", "-m", "chemmcp", "--tools", "ElectrophilicAddition"]
+    }
+  }
+}

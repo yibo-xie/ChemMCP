@@ -9,7 +9,7 @@ from .errors import catch_errors
 
 logger = logging.getLogger(__name__)
 
-mcp_instance = FastMCP("ChemMCP", request_timeout=300)
+mcp_instance = FastMCP("ChemMCP")
 
 
 original_tool = mcp_instance.tool

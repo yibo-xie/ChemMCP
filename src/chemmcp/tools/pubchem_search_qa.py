@@ -27,11 +27,11 @@ class PubchemSearchQA(BaseTool):
     code_input_sig = [("representation_name", "str", 'N/A', "The representation name, can be \"smiles\", \"iupac\", or \"name\" (chemical's common name)."), ("representation", "str", 'N/A', "The representation of the molecule/compound, corresponding to the representation_name used."), ("question", "str", 'N/A', "The question about the molecule/compound.")]
     output_sig = [("answer", "str", "The answer to the question based on the PubChem page.")]
     examples = [
-        {'code_input': {'representation_name': 'SMILES', 'representation': 'CCO', "question": "What properties do this molecule have?"}, 'text_input': {'representation_name_and_representation_and_question': 'SMILES: CCO   Questions: What properties do this molecule have?'}, 'output': {'answer': 'This molecule has the following properties: [...]'}},
+        {'code_input': {'representation_name': 'SMILES', 'representation': 'CCO', "question": "What properties do this molecule have?"}, 'text_input': {'representation_name_and_representation_and_question': 'SMILES: CCO   Questions: What properties do this molecule have?'}, 'output': {'answer': 'This molecule has the following properties: []'}},
         
-        {'code_input': {'representation_name': 'IUPAC', 'representation': 'ethanol', "question": "What properties do this molecule have?"}, 'text_input': {'representation_name_and_representation_and_question': 'IUPAC: ethanol   Questions: What properties do this molecule have?'}, 'output': {'answer': 'This molecule has the following properties: [...]'}},
+        {'code_input': {'representation_name': 'IUPAC', 'representation': 'ethanol', "question": "What properties do this molecule have?"}, 'text_input': {'representation_name_and_representation_and_question': 'IUPAC: ethanol   Questions: What properties do this molecule have?'}, 'output': {'answer': 'This molecule has the following properties: []'}},
 
-        {'code_input': {'representation_name': 'Name', 'representation': 'alcohol', "question": "What properties do this molecule have?"}, 'text_input': {'representation_name_and_representation_and_question': 'Name: alcohol   Questions: What properties do this molecule have?'}, 'output': {'answer': 'This molecule has the following properties: [...]'}},
+        {'code_input': {'representation_name': 'Name', 'representation': 'alcohol', "question": "What properties do this molecule have?"}, 'text_input': {'representation_name_and_representation_and_question': 'Name: alcohol   Questions: What properties do this molecule have?'}, 'output': {'answer': 'This molecule has the following properties: []'}},
     ]
 
     def __init__(self, llm_model=None, init=True, interface='text') -> None:

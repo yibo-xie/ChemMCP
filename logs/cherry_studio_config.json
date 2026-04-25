@@ -1,0 +1,51 @@
+{
+  "mcpServers": {
+    "ChemMCP_SolubilityTools": {
+      "command": "/home/wave/ChemMCP/.venv/bin/python",
+      "args": ["-m", "chemmcp", "--tools"],
+      "tools": [
+        {
+          "name": "amphoteric_species",
+          "description": "#61 Calculate pH and species distribution for amphoteric substances (HCO3-, Al(OH)3, amino acids)."
+        },
+        {
+          "name": "acid_base_strength_compare",
+          "description": "#62 Compare acid/base strengths based on molecular structure and pKa/pKb values."
+        },
+        {
+          "name": "get_ksp",
+          "description": "#63 Look up solubility product constant (Ksp) for ionic compounds from built-in database."
+        },
+        {
+          "name": "calculate_solubility",
+          "description": "#64 Calculate molar solubility from Ksp value, including g/100mL conversion."
+        },
+        {
+          "name": "will_precipitate",
+          "description": "#65 Predict if precipitate forms by comparing ion product Q with Ksp."
+        },
+        {
+          "name": "selective_precipitation",
+          "description": "#66 Design selective precipitation separation schemes for mixed cation solutions using classic qualitative analysis groups (I-V). Input: list of ions. Output: step-by-step separation scheme with reagents, pH, and precipitates."
+        },
+        {
+          "name": "dissolve_precipitate",
+          "description": "#67 Analyze dissolution conditions for precipitates via 4 mechanisms: acid dissolution, base dissolution (amphoteric), complexation, or redox. Database of 30+ compounds with recommended methods."
+        },
+        {
+          "name": "common_ion_solubility",
+          "description": "#68 Calculate common ion effect on solubility. Input: compound, common ion, concentration. Output: reduced solubility, reduction factor, percent decrease. Covers 50+ compounds with Ksp data."
+        },
+        {
+          "name": "complex_ion_solubility",
+          "description": "#69 Calculate complex ion formation effect on solubility (K = Ksp × Kf). Input: compound, ligand, concentration. Output: enhanced solubility, enhancement factor, dominant species. 20+ metal-ligand Kf database."
+        },
+        {
+          "name": "solubility_rules",
+          "description": "#70 Query standard solubility rules for qualitative prediction. 9 rule groups covering all common ion types with exceptions. Input: compound formula. Output: soluble/insoluble verdict with applicable rule and exceptions."
+        }
+      ],
+      "env": {}
+    }
+  }
+}

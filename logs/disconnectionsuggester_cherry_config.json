@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "DisconnectionSuggester": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "DisconnectionSuggester"
+      ]
+    }
+  }
+}

@@ -334,6 +334,137 @@ _tool_module_map = {
     "VibrationalModes": "vibrational_modes",
     "FranckCondonFactors": "franck_condon_factors",
     "BeerLambertCalculator": "beer_lambert_calculator",
+
+    # --- Statistical Thermodynamics & Spectroscopy Tools (#251-260) ---
+    "FluorescenceLifetime": "fluorescence_lifetime",
+    "StarkEffect": "stark_effect",
+    "ZeemanSplitting": "zeeman_splitting",
+    "SpectralLinewidth": "spectral_linewidth",
+    "PartitionFunction": "partition_function",
+    "BoltzmannDistribution": "boltzmann_distribution",
+    "MaxwellBoltzmannSpeed": "maxwell_boltzmann_speed",
+    "FermiDiracDistribution": "fermi_dirac_distribution",
+    "BoseEinsteinDistribution": "bose_einstein_distribution",
+    "StatisticalEntropy": "statistical_entropy",
+
+    # --- Physical Chemistry: Statistical Mechanics & Electrochemistry Tools (#261-270) ---
+    "EquipartitionTheorem": "equipartition_theorem",
+    "DebyeModel": "debye_model",
+    "EinsteinModel": "einstein_model",
+    "EnsembleAverages": "ensemble_averages",
+    # NernstEquation already exists (#265)
+    "CellEmfCalculator": "cell_emf_calculator",
+    "FaradayElectrolysis": "faraday_electrolysis",
+    "DebyeHuckelActivity": "debye_huckel_activity",
+    "ConductivityCalculator": "conductivity_calculator",
+    "TafelEquation": "tafel_equation",
+
+    # --- Electrochemistry & Surface Chemistry Tools (#271-280) ---
+    "OverpotentialAnalyzer": "overpotential_analyzer",
+    "PourbaixDiagramLookup": "pourbaix_diagram_lookup",
+    "IonTransportNumber": "ion_transport_number",
+    "ButlerVolmerKinetics": "butler_volmer_kinetics",
+    "LangmuirIsotherm": "langmuir_isotherm",
+    "BETSurfaceArea": "bet_surface_area",
+    "FreundlichIsotherm": "freundlich_isotherm",
+    "SurfaceTensionCalculator": "surface_tension_calculator",
+    "ContactAngleAnalyzer": "contact_angle_analyzer",
+    "GibbsAdsorption": "gibbs_adsorption",
+
+    # --- Colloidal & Phase Equilibrium Tools (#281-290) ---
+    "ColloidalStability": "colloidal_stability",
+    "ZetaPotential": "zeta_potential",
+    "BinaryPhaseDiagram": "binary_phase_diagram",
+    "RaoultLaw": "raoult_law",
+    "HenryLaw": "henrys_law",
+    "BoilingPointElevation": "boiling_point_elevation",
+    "FreezingPointDepression": "freezing_point_depression",
+    "OsmoticPressure": "osmotic_pressure",
+    "EutecticPointFinder": "eutectic_point_finder",
+    "LeverRuleCalculator": "lever_rule_calculator",
+
+    # --- New MCP Tools (#291-300) ---
+    "PointGroupIdentifier": "point_group_identifier",
+    "SymmetryOperations": "symmetry_operations",
+    "BondOrderCalculator": "bond_order_calculator",
+    "DipoleMomentEstimator": "dipole_moment_estimator",
+    "HybridizationAnalyzer": "hybridization_analyzer",
+    "VseprGeometry": "vsepr_geometry",
+    "IdealGasCalculator": "ideal_gas_calculator",
+    "VanDerWaalsGas": "van_der_waals_gas",
+    "CompressibilityFactor": "compressibility_factor",
+    "VirialEquation": "virial_equation",
+
+    # --- Sample Preparation & Analytical Chemistry Tools (#301-310) ---
+    "SampleDilutionCalculator": "sample_dilution_calculator",
+    "StandardSolutionPrep": "standard_solution_prep",
+    "ExtractionOptimizer": "extraction_optimizer",
+    "DigestionProtocolSelector": "digestion_protocol_selector",
+    "FiltrationGuide": "filtration_guide",
+    "SPEMethodDesigner": "spe_method_designer",
+    "DerivatizationReagentSelector": "derivatization_reagent_selector",
+    "MatrixMatchingAdvisor": "matrix_matching_advisor",
+    "SamplePreservationGuide": "sample_preservation_guide",
+    "HomogenizationProtocol": "homogenization_protocol",
+
+    # --- Analytical Chemistry Tools (#311-320) ---
+    "CentrifugationCalculator": "centrifugation_calculator",
+    "EvaporationEstimator": "evaporation_estimator",
+    "PhAdjustmentBuffer": "ph_adjustment_buffer",
+    "InternalStandardSelector": "internal_standard_selector",
+    "RecoveryCalculator": "recovery_calculator",
+    "UvVisWavelengthSelector": "uv_vis_wavelength_selector",
+    "MolarAbsorptivityLookup": "molar_absorptivity_lookup",
+    "IrSpectrumInterpreter": "ir_spectrum_interpreter",
+    "FtirBaselineCorrector": "ftir_baseline_corrector",
+
+    # --- Spectroscopy & Analytical Chemistry Tools (#321-330) ---
+    "RamanShiftCalculator": "raman_shift_calculator",
+    "FluorescenceQuantumYield": "fluorescence_quantum_yield",
+    "ExcitationEmissionOptimizer": "excitation_emission_optimizer",
+    "AasFlameSelector": "aas_flame_selector",
+    "AasInterferenceChecker": "aas_interference_checker",
+    "IcpOesLineSelector": "icp_oes_line_selector",
+    "IcpMsIsotopeSelector": "icp_ms_isotope_selector",
+    "PlasmaConditionOptimizer": "plasma_condition_optimizer",
+    "XrfMatrixCorrection": "xrf_matrix_correction",
+    "XrdPhaseIdentifier": "xrd_phase_identifier",
+
+    # --- Spectroscopy & Chromatography Tools (#331-340) ---
+    "NmrChemicalShiftPredictor": "nmr_chemical_shift_predictor",
+    # Note: CouplingConstantAnalyzer already registered as #177
+    "SpectralDeconvolution": "spectral_deconvolution",
+    "HplcColumnSelector": "hplc_column_selector",
+    "MobilePhaseOptimizer": "mobile_phase_optimizer",
+    "RetentionTimePredictor": "retention_time_predictor",
+    "PlateNumberCalculator": "plate_number_calculator",
+    "ResolutionCalculator": "resolution_calculator",
+    "GcOvenProgramDesigner": "gc_oven_program_designer",
+    "GcCarrierGasSelector": "gc_carrier_gas_selector",
+
+    # --- Chromatography & Analytical Chemistry Tools (#341-350) ---
+    "GcColumnBleedPredictor": "gc_column_bleed_predictor",
+    "IonChromatographyEluent": "ion_chromatography_eluent",
+    "SecCalibrationCurve": "sec_calibration_curve",
+    "PeakPurityAnalyzer": "peak_purity_analyzer",
+    "SystemSuitabilityChecker": "system_suitability_checker",
+    "DeadVolumeCalculator": "dead_volume_calculator",
+    "VanDeemterAnalyzer": "van_deemter_analyzer",
+    "CapacityFactorCalculator": "capacity_factor_calculator",
+    "SelectivityFactorCalculator": "selectivity_factor_calculator",
+    "MolecularIonCalculator": "molecular_ion_calculator",
+
+    # --- Mass Spectrometry Tools (#351-360) ---
+    "IsotopePatternSimulator": "isotope_pattern_simulator",
+    "FragmentationPredictor": "fragmentation_predictor",
+    "AdductIonIdentifier": "adduct_ion_identifier",
+    "MRmTransitionOptimizer": "mrm_transition_optimizer",
+    "MassAccuracyCalculator": "mass_accuracy_calculator",
+    "CollisionEnergyOptimizer": "collision_energy_optimizer",
+    "IonSuppressionChecker": "ion_suppression_checker",
+    "ElementalCompositionCalculator": "elemental_composition_calculator",
+    "MsMsSpectrumAnnotator": "msms_spectrum_annotator",
+    "MatrixClusterIdentifier": "matrix_cluster_identifier",
 }
 
 __all__ = list(_tool_module_map.keys())

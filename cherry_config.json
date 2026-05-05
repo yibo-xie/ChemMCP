@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "ChemMCP": {
+            "command": "/home/wave/.local/bin/uv",
+            "args": [
+                "--directory",
+                "/home/wave/ChemMCP",
+                "run",
+                "-m",
+                "chemmcp",
+                "--tools",
+                "PointGroupIdentifier,SymmetryOperations,BondOrderCalculator,DipoleMomentEstimator,HybridizationAnalyzer,VseprGeometry,IdealGasCalculator,VanDerWaalsGas,CompressibilityFactor,VirialEquation"
+            ]
+        }
+    }
+}

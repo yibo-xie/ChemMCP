@@ -421,7 +421,7 @@ class LigandFieldDiagram(BaseTool):
     def _explain_oh(self, d_n: int, field: str, ligand: str, delta_f: float) -> str:
         """Generate explanation for octahedral case."""
         spin_txt = "low-spin" if field == "strong" else "high-spin"
-    examples_map = {
+        examples_map = {
             (6, "strong"): "[Co(NH3)6]3+, [Fe(CN)6]4-, [Co(en)3]3+",
             (6, "weak"): "[Fe(H2O)6]2+, [CoF6]3-",
             (3, "any"): "[Cr(NH3)6]3+, [Cr(H2O)6]3+",
@@ -429,7 +429,7 @@ class LigandFieldDiagram(BaseTool):
             (5, "weak"): "[Mn(H2O)6]2+, [Fe(H2O)6]3+",
             (5, "strong"): "[Fe(CN)6]3-, [Mn(CN)6]3-",
         }
-        ex = examples_map.get((d_n, field)) or examples_map.get((d_n, "any"), "various complexes")
+        ex = examples_map.get((d_n, field)) or examples_map.get((d_n, "any")) or "various complexes"
         return (
             f"In octahedral crystal field, the five degenerate d-orbitals split into lower-energy t2g "
             f"(dxy, dxz, dyz, -0.4Δo) and higher-energy eg (dx²-y², dz², +0.6Δo). "

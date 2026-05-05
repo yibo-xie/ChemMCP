@@ -73,6 +73,8 @@ class CarnotEfficiency(BaseTool):
                 "q_h": 806.2,
                 "q_c": 403.1,
                 "w_net": 403.1,
+                "processes": "See full output for process details.",
+                "explanation": "Carnot efficiency = 1 - Tc/Th.",
             },
         },
     ]

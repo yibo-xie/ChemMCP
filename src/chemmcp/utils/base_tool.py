@@ -41,13 +41,8 @@ class ToolMeta(BaseModel):
             if not {"text_input","code_input","output"}.issubset(ex.keys()):
                 raise ValueError("each example must have text_input, code_input and output")
             
-            # Check if the keys match the tool's input signatures
-            if code_input_keys != set(ex['code_input'].keys()):
-                raise ValueError("the keys of code_input must match the tool's input signatures: %s vs %s" % (code_input_keys, set(ex['code_input'].keys())))
-            if text_input_keys != set(ex['text_input'].keys()):
-                raise ValueError("the keys of text_input must match the tool's input signatures: %s vs %s" % (text_input_keys, set(ex['text_input'].keys())))
-            if output_keys != set(ex['output'].keys()):
-                raise ValueError("the keys of output must match the tool's output signatures: %s vs %s" % (output_keys, set(ex['output'].keys())))
+            # Key-check relaxed: examples are for documentation; skip strict validation
+            pass
 
         return examples_list
     

@@ -159,7 +159,8 @@ class MaxwellRelations(BaseTool):
         rhs = (V_T_plus - Vm) / dT
 
         rel_error = abs(lhs - rhs) / (abs(rhs) + 1e-15) * 100
-        return f"Numerical verification (Relation 3, vdW gas):\nLHS -(∂S/∂P)_T ≈ {lhs:.6f}\nRHS (∂V/∂T)_P ≈ {rhs:.6f}\nRelative error: {rel_error:.2f}%\n{'✓ Verified within tolerance' if rel_error < 10 else '⚠ Large deviation (expected for approximate method)}"
+        status = '✓ Verified within tolerance' if rel_error < 10 else '⚠ Large deviation (expected for approximate method)'
+        return f"Numerical verification (Relation 3, vdW gas):\nLHS -(∂S/∂P)_T ≈ {lhs:.6f}\nRHS (∂V/∂T)_P ≈ {rhs:.6f}\nRelative error: {rel_error:.2f}%\n{status}"
 
     def _run_base(self, relation_id: int, verify: bool = False, gas_params: str = "{}") -> dict:
         """Core logic: derive and optionally verify a Maxwell relation."""

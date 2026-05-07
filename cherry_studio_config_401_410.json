@@ -1,0 +1,132 @@
+{
+  "ChemMCP_MatrixEigenvalueSolver": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "MatrixEigenvalueSolver"
+    ],
+    "description": "#401 求解矩阵特征值，用于分子轨道能级、振动模式分析"
+  },
+  "ChemMCP_MatrixDiagonalization": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "MatrixDiagonalization"
+    ],
+    "description": "#402 矩阵对角化，Hückel方法、Hartree-Fock计算核心"
+  },
+  "ChemMCP_DeterminantCalculator": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "DeterminantCalculator"
+    ],
+    "description": "#403 行列式计算，久期方程求解"
+  },
+  "ChemMCP_MatrixInversion": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "MatrixInversion"
+    ],
+    "description": "#404 矩阵求逆，最小二乘拟合、正规方程求解"
+  },
+  "ChemMCP_SvdDecomposition": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "SvdDecomposition"
+    ],
+    "description": "#405 奇异值分解，化学计量学、光谱解析"
+  },
+  "ChemMCP_LinearSystemSolver": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "LinearSystemSolver"
+    ],
+    "description": "#406 线性方程组求解，平衡计算、质量守恒"
+  },
+  "ChemMCP_NumericalIntegrator": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "NumericalIntegrator"
+    ],
+    "description": "#407 数值积分，轨道重叠积分、热力学函数"
+  },
+  "ChemMCP_OdeSolverRk4": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "OdeSolverRk4"
+    ],
+    "description": "#408 四阶龙格-库塔法，反应动力学模拟"
+  },
+  "ChemMCP_OdeSolverStiff": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "OdeSolverStiff"
+    ],
+    "description": "#409 刚性ODE求解器，复杂反应网络"
+  },
+  "ChemMCP_PdeSolverFiniteDiff": {
+    "command": "/home/wave/.local/bin/uv",
+    "args": [
+      "--directory",
+      "/home/wave/ChemMCP",
+      "run",
+      "-m",
+      "chemmcp",
+      "--tools",
+      "PdeSolverFiniteDiff"
+    ],
+    "description": "#410 有限差分PDE求解，扩散方程、传热"
+  }
+}

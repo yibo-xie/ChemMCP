@@ -1,0 +1,76 @@
+{
+  "mcpServers": {
+    "ChemMCP_EquilibriumConstant": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EquilibriumConstant"
+      ]
+    },
+    "ChemMCP_LeChatelierAnalyzer": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "LeChatelierAnalyzer"
+      ]
+    },
+    "ChemMCP_GibbsMinimization": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GibbsMinimization"
+      ]
+    },
+    "ChemMCP_Schrodinger3DSolver": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "Schrodinger3DSolver"
+      ]
+    },
+    "ChemMCP_SphericalHarmonics": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SphericalHarmonics"
+      ]
+    },
+    "ChemMCP_RadialDistribution": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RadialDistribution"
+      ]
+    }
+  }
+}

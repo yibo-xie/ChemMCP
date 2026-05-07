@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ChemMCP_GibbsMinimization": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GibbsMinimization"
+      ]
+    }
+  }
+}

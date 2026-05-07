@@ -465,6 +465,146 @@ _tool_module_map = {
     "ElementalCompositionCalculator": "elemental_composition_calculator",
     "MsMsSpectrumAnnotator": "msms_spectrum_annotator",
     "MatrixClusterIdentifier": "matrix_cluster_identifier",
+
+    # --- Electrochemistry & Analytical Chemistry Tools (#361-370) ---
+    "MassDefectFilter": "mass_defect_filter",
+    "NernstEquationSolver": "nernst_equation_solver",
+    "ElectrodeSelectionGuide": "electrode_selection_guide",
+    "CvPeakAnalyzer": "cv_peak_analyzer",
+    "DiffusionCoefficientCalculator": "diffusion_coefficient_calculator",
+    "PotentiometricTitrationEndpoint": "potentiometric_titration_endpoint",
+    "ConductivityCellConstant": "conductivity_cell_constant",
+    "PhElectrodeCalibration": "ph_electrode_calibration",
+    "ChronoamperometryAnalyzer": "chronoamperometry_analyzer",
+    "EisCircuitFitter": "eis_circuit_fitter",
+
+    # --- Analytical Chemistry Statistics & QA/QC Tools (#371-380) ---
+    "StrippingVoltammetryOptimizer": "stripping_voltammetry_optimizer",
+    "CalibrationCurveFitter": "calibration_curve_fitter",
+    "LodLoqCalculator": "lod_loq_calculator",
+    "UncertaintyPropagator": "uncertainty_propagator",
+    "OutlierDetector": "outlier_detector",
+    "TTestCalculator": "t_test_calculator",
+    "FTestCalculator": "f_test_calculator",
+    "AnovaAnalyzer": "anova_analyzer",
+    "RegressionDiagnostics": "regression_diagnostics",
+
+    # --- Analytical Chemistry: Method Comparison & QA/QC Tools (#381-390) ---
+    "MethodComparisonEvaluator": "method_comparison_evaluator",
+    "QcChartGenerator": "qc_chart_generator",
+    "SpikeRecoveryEvaluator": "spike_recovery_evaluator",
+    "MatrixEffectCalculator": "matrix_effect_calculator",
+    "MeasurementPrecisionCalculator": "measurement_precision_calculator",
+    "AcidBaseTitrationCalculator": "acid_base_titration_calculator",
+    "IndicatorSelector": "indicator_selector",
+    "ComplexometricTitrationHelper": "complexometric_titration_helper",
+    "RedoxTitrationCalculator": "redox_titration_calculator",
+    "PrecipitationTitrationCalculator": "precipitation_titration_calculator",
+
+    # --- Analytical Chemistry: Titration & QA/QC Tools (#391-400) ---
+    "BackTitrationSolver": "back_titration_solver",
+    "TitrantStandardization": "titrant_standardization",
+    "BufferCapacityCalculator": "buffer_capacity_calculator",
+    "MethodValidationChecklist": "method_validation_checklist",
+    "LinearityRangeValidator": "linearity_range_validator",
+    "RobustnessDoeDesigner": "robustness_doe_designer",
+    "SpecificityTestDesigner": "specificity_test_designer",
+    "StabilityStudyPlanner": "stability_study_planner",
+    "CMCDocumentationHelper": "cmc_documentation_helper",
+    "AuditTrailReviewer": "audit_trail_reviewer",
+
+    # --- Numerical & Linear Algebra Tools (#401-410) ---
+    "MatrixEigenvalueSolver": "matrix_eigenvalue_solver",
+    "MatrixDiagonalization": "matrix_diagonalization",
+    "DeterminantCalculator": "determinant_calculator",
+    "MatrixInversion": "matrix_inversion",
+    "SvdDecomposition": "svd_decomposition",
+    "LinearSystemSolver": "linear_system_solver",
+    "NumericalIntegrator": "numerical_integrator",
+    "OdeSolverRk4": "ode_solver_rk4",
+    "OdeSolverStiff": "ode_solver_stiff",
+    "PdeSolverFiniteDiff": "pde_solver_finite_diff",
+
+    # --- Numerical & Computational Chemistry Tools (#411-420) ---
+    "PartialDerivative": "partial_derivative",
+    "GradientCalculator": "gradient_calculator",
+    "HessianMatrix": "hessian_matrix",
+    "LaplacianOperator": "laplacian_operator",
+    "NewtonRaphsonSolver": "newton_raphson_solver",
+    "BisectionMethod": "bisection_method",
+    "CurveFittingNonlinear": "curve_fitting_nonlinear",
+    "InterpolationSpline": "interpolation_spline",
+    "FftTransform": "fft_transform",
+    "NumericalDifferentiation": "numerical_differentiation",
+
+    # --- Chem Fit Tools (#421-430) ---
+    "ErrorPropagation": "error_propagation",
+    "LeastSquaresFit": "least_squares_fit",
+    "MonteCarloIntegrator": "monte_carlo_integrator",
+    "StatisticalEnsemble": "statistical_ensemble",
+    "MolecularDynamicsVerlet": "molecular_dynamics_verlet",
+    "VelocityVerlet": "velocity_verlet",
+    "ForceFieldCalculator": "force_field_calculator",
+
+    # --- Molecular Structure & Spectroscopy Tools (#431-440) ---
+    "MomentOfInertia": "moment_of_inertia",
+    "NormalModeAnalysis": "normal_mode_analysis",
+    "AdvancedPartitionFunction": "advanced_partition_function",
+    "GibbsEnergyCalculator": "gibbs_energy_calculator",
+    "EnthalpyCalculatorNew": "enthalpy_calculator_new",
+    "EntropyCalculatorNew": "entropy_calculator_new",
+    "HeatCapacityCalculator": "heat_capacity_calculator",
+    "EquationOfState": "equation_of_state",
+    "PhaseEquilibrium": "phase_equilibrium",
+    "ChemicalPotentialAdvanced": "chemical_potential_advanced",
+
+    # --- MCP Registration Table #441-450 ---
+    "ActivityCoefficient": "activity_coefficient",           # 441: 活度系数计算
+    "FugacityCalculator": "fugacity_calculator",             # 442: 逸度计算
+    "EquilibriumConstant": "equilibrium_constant",           # 443: 平衡常数计算 Kp/Kc/Ka/Kb
+    "LeChatelierAnalyzer": "le_chatelier_analyzer",         # 444: 勒夏特列原理分析
+    "GibbsMinimization": "gibbs_minimization",             # 445: 吉布斯能最小化
+    "SchrodingerSolver1D": "schrodinger_solver_1d",          # 446: 一维薛定谔方程求解
+    "Schrodinger3DSolver": "schrodinger_3d_solver",         # 447: 三维薛定谔方程求解
+    "HydrogenWavefunction": "hydrogen_wavefunction",         # 448: 氢原子波函数计算
+    "SphericalHarmonics": "spherical_harmonics",             # 449: 球谐函数计算
+    "RadialDistribution": "radial_distribution",             # 450: 径向分布函数
+
+    # --- MCP Registration Table #451-460: Quantum Chemistry Advanced Tools ---
+    "ExpectationValue": "expectation_value",                   # 451: 期望值计算，可观测量平均值
+    "CommutatorCalculator": "commutator_calculator",           # 452: 对易子计算，测不准关系验证
+    "VariationalMethod": "variational_method",                 # 453: 变分法计算，能量上界估计
+    "PerturbationTheory": "perturbation_theory",               # 454: 微扰论计算，能级修正
+    "WKBApproximation": "wkb_approximation",                   # 455: WKB近似，半经典隧穿概率
+    "BornOppenheimer": "born_oppenheimer",                     # 456: Born-Oppenheimer近似，核电子分离
+    "HuckelMethod": "huckel_method",                           # 457: Hückel分子轨道法，π电子体系
+    "ExtendedHuckel": "extended_huckel",                       # 458: 扩展Hückel方法，σ+π电子
+    "HartreeFockSCF": "hartree_fock_scf",                      # 459: Hartree-Fock自洽场，从头算核心
+    "SlaterDeterminant": "slater_determinant",                  # 460: Slater行列式构建，反对称波函数
+
+    # --- MCP Registration Table #461-470: Quantum Chemistry Integral & Advanced Electronic Structure Tools ---
+    "BasisSetHandler": "basis_set_handler",                     # 461: 基组处理，STO/GTO转换
+    "OverlapIntegral": "overlap_integral",                       # 462: 重叠积分计算，轨道交叠
+    "CoulombIntegral": "coulomb_integral",                     # 463: 库仑积分计算，电子排斥
+    "ExchangeIntegral": "exchange_integral",                   # 464: 交换积分计算，Pauli原理效应
+    "MOEnergyLevelDiagram": "mo_energy_level_diagram",          # 465: 分子轨道能级图生成
+    "FrontierOrbitalAnalysis": "frontier_orbital_analysis",     # 466: 前线轨道分析，HOMO/LUMO
+    "DftXcFunctional": "dft_xc_functional",                   # 467: DFT交换相关泛函计算，LDA/GGA/杂化
+    "ElectronDensityCalculator": "electron_density_calculator", # 468: 电子密度计算，DFT核心量
+    "Mp2Correlation": "mp2_correlation",                      # 469: MP2相关能计算，后Hartree-Fock修正
+    "ConfigurationInteraction": "configuration_interaction",   # 470: 组态相互作用，多参考态方法
+
+    # --- MCP Registration Table #471-480: Quantum Chemistry Electrostatic & Spectroscopic Tools ---
+    "CoulombPotential": "coulomb_potential",                     # 471: 库仑势计算，点电荷相互作用
+    "ElectricFieldMolecule": "electric_field_molecule",           # 472: 分子电场计算，静电势分布
+    "DipoleMoment": "dipole_moment",                           # 473: 偶极矩计算，分子极性分析
+    "Polarizability": "polarizability",                         # 474: 极化率计算，拉曼活性、折射率
+    "MultipoleExpansion": "multipole_expansion",               # 475: 多极展开，长程相互作用
+    "PoissonBoltzmann": "poisson_boltzmann",                   # 476: Poisson-Boltzmann方程，溶剂化能
+    "TransitionDipole": "transition_dipole",                   # 477: 跃迁偶极矩，吸收强度预测
+    "SelectionRules": "selection_rules",                       # 478: 选择定则分析，跃迁允禁判断
+    "FranckCondon": "franck_condon",                           # 479: Franck-Condon因子，振动精细结构
+    "OscillatorStrength": "oscillator_strength",               # 480: 振子强度计算，吸收截面
 }
 
 __all__ = list(_tool_module_map.keys())

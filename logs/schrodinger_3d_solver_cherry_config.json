@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ChemMCP_Schrodinger3DSolver": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "Schrodinger3DSolver"
+      ]
+    }
+  }
+}

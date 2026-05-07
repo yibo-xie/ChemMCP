@@ -1,0 +1,122 @@
+{
+  "project": "ChemMCP MCP Registration Table #441-450",
+  "date": "2026-05-06",
+  "status": "ALL TESTS PASSED",
+  "tools_developed": 6,
+  "tools_already_existed": 4,
+  "total_tools_in_table": 10,
+  "details": [
+    {
+      "name": "EquilibriumConstant",
+      "func_name": "calculate_equilibrium_constant",
+      "description": "Comprehensive equilibrium constant calculator: Kp/Kc conversion, Ka/Kb conjugate pairs, K from ΔG°, Kw vs temperature.",
+      "version": "0.1.0",
+      "categories": [
+        "General"
+      ],
+      "tags": [
+        "Thermodynamics",
+        "Equilibrium",
+        "Physical Chemistry",
+        "Acid-Base",
+        "Kp",
+        "Kc",
+        "Ka",
+        "Kb"
+      ]
+    },
+    {
+      "name": "LeChatelierAnalyzer",
+      "func_name": "analyze_le_chatelier",
+      "description": "Comprehensive Le Chatelier's principle analyzer: predict equilibrium shift direction, K value change, and quantitative analysis for concentration, pressure, temperature, inert gas, and catalyst disturbances.",
+      "version": "0.1.0",
+      "categories": [
+        "General"
+      ],
+      "tags": [
+        "Le Chatelier",
+        "Equilibrium",
+        "Physical Chemistry",
+        "Chemical Equilibrium",
+        "Prediction"
+      ]
+    },
+    {
+      "name": "GibbsMinimization",
+      "func_name": "gibbs_minimization",
+      "description": "Minimize Gibbs free energy to find equilibrium composition for complex chemical systems using Lagrange multiplier method with element balance constraints.",
+      "version": "0.1.0",
+      "categories": [
+        "General"
+      ],
+      "tags": [
+        "Thermodynamics",
+        "Gibbs Free Energy",
+        "Chemical Equilibrium",
+        "Minimization",
+        "Physical Chemistry"
+      ]
+    },
+    {
+      "name": "Schrodinger3DSolver",
+      "func_name": "schrodinger_3d_solver",
+      "description": "Solve the 3D time-independent Schrödinger equation for hydrogen-like atoms. Compute energy levels, wavefunctions (radial × angular), probability densities, orbital shapes, and quantum mechanical observables.",
+      "version": "0.1.0",
+      "categories": [
+        "General"
+      ],
+      "tags": [
+        "Quantum Mechanics",
+        "Schrodinger Equation",
+        "Hydrogen Atom",
+        "Atomic Orbitals",
+        "Wavefunction",
+        "3D"
+      ]
+    },
+    {
+      "name": "SphericalHarmonics",
+      "func_name": "spherical_harmonics",
+      "description": "Compute spherical harmonics Y_l^m(θ, φ): values (real/imaginary/modulus), probability density, angular momentum eigenvalues, normalization, and orthogonality properties.",
+      "version": "0.1.0",
+      "categories": [
+        "General"
+      ],
+      "tags": [
+        "Quantum Mechanics",
+        "Spherical Harmonics",
+        "Angular Momentum",
+        "Wavefunction",
+        "Atomic Orbitals"
+      ]
+    },
+    {
+      "name": "RadialDistribution",
+      "func_name": "radial_distribution",
+      "description": "Compute radial distribution function D(r)=r²|R_nl(r)|² for hydrogen-like atoms: most probable radius, mean radius, radial nodes, probability in spherical shells, cumulative distribution, and radial moments.",
+      "version": "0.1.0",
+      "categories": [
+        "General"
+      ],
+      "tags": [
+        "Quantum Mechanics",
+        "Radial Distribution",
+        "Hydrogen Atom",
+        "Probability Density",
+        "Wavefunction",
+        "Atomic Structure"
+      ]
+    }
+  ],
+  "test_file": "tests/test_mcp_441_450.py",
+  "test_result": "ALL PASSED",
+  "cherry_studio_configs": [
+    "logs/mcp_441_450_combined_cherry_config.json",
+    "logs/equilibrium_constant_cherry_config.json",
+    "logs/le_chatelier_analyzer_cherry_config.json",
+    "logs/gibbs_minimization_cherry_config.json",
+    "logs/schrodinger_3d_solver_cherry_config.json",
+    "logs/spherical_harmonics_cherry_config.json",
+    "logs/radial_distribution_cherry_config.json"
+  ]
+}

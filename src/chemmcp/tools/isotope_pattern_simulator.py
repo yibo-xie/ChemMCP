@@ -192,14 +192,16 @@ class IsotopePatternSimulator(BaseTool):
         summary = self._generate_envelope_summary(elements, peaks)
 
         return {
-            "formula": molecular_formula,
-            "monoisotopic_mass": round(peaks[0]["mz"], 4),
-            "charge": charge,
-            "resolution": resolution,
-            "peak_count": len(peaks),
-            "nominal_mass": int(round(peaks[0]["mz"])),
-            "envelope_summary": summary,
-            "peaks": peaks,
+            "result": {
+                "formula": molecular_formula,
+                "monoisotopic_mass": round(peaks[0]["mz"], 4),
+                "charge": charge,
+                "resolution": resolution,
+                "peak_count": len(peaks),
+                "nominal_mass": int(round(peaks[0]["mz"])),
+                "envelope_summary": summary,
+                "peaks": peaks,
+            }
         }
 
     @staticmethod

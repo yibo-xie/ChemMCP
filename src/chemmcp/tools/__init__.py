@@ -605,6 +605,30 @@ _tool_module_map = {
     "SelectionRules": "selection_rules",                       # 478: 选择定则分析，跃迁允禁判断
     "FranckCondon": "franck_condon",                           # 479: Franck-Condon因子，振动精细结构
     "OscillatorStrength": "oscillator_strength",               # 480: 振子强度计算，吸收截面
+
+    # --- MCP Registration Table #481-490: Spectroscopy, NMR, Kinetics & Reaction Coordinate Tools ---
+    "IrSpectrumPredictor": "ir_spectrum_predictor",              # 481: 红外光谱预测，振动频率与强度
+    "RamanSpectrumPredictor": "raman_spectrum_predictor",        # 482: 拉曼光谱预测，极化率变化
+    "UvVisSpectrum": "uv_vis_spectrum",                         # 483: UV-Vis光谱计算，电子跃迁
+    "NmrShielding": "nmr_shielding",                            # 484: NMR化学位移计算，屏蔽常数
+    "SpinSpinCoupling": "spin_spin_coupling",                    # 485: 自旋-自旋耦合常数，NMR J耦合
+    "RateLawIntegrator": "rate_law_integrator",                  # 486: 速率方程积分，零/一/二级动力学
+    "ArrheniusCalculator": "arrhenius_calculator",                # 487: Arrhenius方程，活化能、指前因子
+    "EyringEquation": "eyring_equation",                        # 488: Eyring方程，过渡态理论速率常数
+    "TransitionStateTheory": "transition_state_theory",          # 489: 过渡态理论计算，反应速率预测
+    "ReactionCoordinate": "reaction_coordinate",                  # 490: 反应坐标分析，IRC计算
+
+    # --- MCP Registration Table #491-500: Kinetics Corrections & Computational Chemistry Tools ---
+    "TunnelingCorrection": "tunneling_correction",               # 491: 隧穿校正，轻原子转移反应
+    "SteadyStateApprox": "steady_state_approx",                 # 492: 稳态近似，中间体浓度
+    "PreEquilibrium": "pre_equilibrium",                       # 493: 预平衡近似，快速平衡步骤
+    "RateDeterminingStep": "rate_determining_step",             # 494: 速控步分析，反应瓶颈识别 (already exists)
+    "MichaelisMenten": "michaelis_menten",                     # 495: Michaelis-Menten动力学，酶催化
+    "ReactionNetworkSolver": "reaction_network_solver",         # 496: 反应网络求解，多步机理模拟
+    "GeometryOptimizer": "geometry_optimizer",                 # 497: 几何优化，能量极小化
+    "TransitionStateSearch": "transition_state_search",         # 498: 过渡态搜索，鞍点定位
+    "PotentialEnergySurface": "potential_energy_surface",       # 499: 势能面扫描，反应路径探索
+    "FrequencyAnalysis": "frequency_analysis",                 # 500: 频率分析，驻点性质确认（极小/过渡态）
 }
 
 __all__ = list(_tool_module_map.keys())

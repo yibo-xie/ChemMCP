@@ -564,7 +564,7 @@ _tool_module_map = {
     "EquilibriumConstant": "equilibrium_constant",           # 443: 平衡常数计算 Kp/Kc/Ka/Kb
     "LeChatelierAnalyzer": "le_chatelier_analyzer",         # 444: 勒夏特列原理分析
     "GibbsMinimization": "gibbs_minimization",             # 445: 吉布斯能最小化
-    "SchrodingerSolver1D": "schrodinger_solver_1d",          # 446: 一维薛定谔方程求解
+# "SchrodingerSolver1D": "schrodinger_solver_1d",  # 446: REMOVED (duplicate, class is SchrodingerSolver1d)
     "Schrodinger3DSolver": "schrodinger_3d_solver",         # 447: 三维薛定谔方程求解
     "HydrogenWavefunction": "hydrogen_wavefunction",         # 448: 氢原子波函数计算
     "SphericalHarmonics": "spherical_harmonics",             # 449: 球谐函数计算

@@ -1,0 +1,1278 @@
+{
+  "mcpServers": {
+    "ChemMCP_IdealGasCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "IdealGasCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_VanDerWaalsGas": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "VanDerWaalsGas"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CompressibilityFactor": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CompressibilityFactor"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_VirialEquation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "VirialEquation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EquationOfState": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EquationOfState"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_ClausiusClapeyron": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "ClausiusClapeyron"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CalculateGibbsChange": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CalculateGibbsChange"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CalculateReactionEnthalpy": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CalculateReactionEnthalpy"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EnthalpyCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EnthalpyCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EnthalpyCalculatorNew": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EnthalpyCalculatorNew"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EntropyCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EntropyCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EntropyCalculatorNew": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EntropyCalculatorNew"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_GibbsEnergyCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GibbsEnergyCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_GibbsFreeEnergy": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GibbsFreeEnergy"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_GibbsMinimization": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GibbsMinimization"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EquilibriumConstant": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EquilibriumConstant"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EquilibriumConstantThermo": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EquilibriumConstantThermo"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_LeChatelierAnalyzer": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "LeChatelierAnalyzer"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_LeChatelierPrediction": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "LeChatelierPrediction"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_VantHoffEquilibrium": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "VantHoffEquilibrium"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PressureEffectEquilibrium": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PressureEffectEquilibrium"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CalculatePH": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CalculatePH"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_AcidBasePredictor": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "AcidBasePredictor"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_AcidBaseStrengthCompare": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "AcidBaseStrengthCompare"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_AcidBaseTitrationCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "AcidBaseTitrationCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PolyproticAcid": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PolyproticAcid"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_AmphotericSpecies": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "AmphotericSpecies"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BufferCapacity": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BufferCapacity"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BufferCapacityCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BufferCapacityCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BufferPreparation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BufferPreparation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PhAdjustmentBuffer": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PhAdjustmentBuffer"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CalculateSolubility": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CalculateSolubility"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_SolubilityRules": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SolubilityRules"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CommonIonEffect": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CommonIonEffect"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CommonIonSolubility": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CommonIonSolubility"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_SelectivePrecipitation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SelectivePrecipitation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PrecipitationPrediction": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PrecipitationPrediction"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_WillPrecipitate": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "WillPrecipitate"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_DissolvePrecipitate": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "DissolvePrecipitate"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_GetKsp": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GetKsp"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CalculateCellPotential": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CalculateCellPotential"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_NernstEquation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "NernstEquation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_NernstEquationSolver": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "NernstEquationSolver"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_IdentifyOxidizingAgent": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "IdentifyOxidizingAgent"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_AssignOxidationNumber": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "AssignOxidationNumber"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CalculateLatticeEnergy": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CalculateLatticeEnergy"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BornHaberCycle": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BornHaberCycle"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_ChemicalPotential": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "ChemicalPotential"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_ChemicalPotentialAdvanced": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "ChemicalPotentialAdvanced"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_ActivityCoefficient": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "ActivityCoefficient"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_FugacityCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "FugacityCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PhaseEquilibrium": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PhaseEquilibrium"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PhaseRuleAnalyzer": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PhaseRuleAnalyzer"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BinaryPhaseDiagram": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BinaryPhaseDiagram"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EutecticPointFinder": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EutecticPointFinder"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_LeverRuleCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "LeverRuleCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_RaoultLaw": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RaoultLaw"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_HenrysLaw": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "HenrysLaw"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_FreezingPointDepression": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "FreezingPointDepression"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BoilingPointElevation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BoilingPointElevation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_OsmoticPressure": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "OsmoticPressure"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_ArrheniusCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "ArrheniusCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_ArrheniusAnalyzer": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "ArrheniusAnalyzer"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CollisionTheory": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CollisionTheory"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EyringEquation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EyringEquation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_RateLawFitter": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RateLawFitter"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_RateLawIntegrator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RateLawIntegrator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_IntegratedRateLaw": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "IntegratedRateLaw"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_RateDeterminingStep": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "RateDeterminingStep"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_SteadyStateApproximation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SteadyStateApproximation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_SteadyStateApprox": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SteadyStateApprox"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PreEquilibrium": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PreEquilibrium"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_ParallelConsecutiveReactions": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "ParallelConsecutiveReactions"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_TunnelingCorrection": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "TunnelingCorrection"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_TransitionStateTheory": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "TransitionStateTheory"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EnzymeKinetics": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EnzymeKinetics"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_MichaelisMenten": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "MichaelisMenten"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_KineticVsThermodynamic": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "KineticVsThermodynamic"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_DisproportionationCheck": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "DisproportionationCheck"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_SpontaneityCheck": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "SpontaneityCheck"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_CarnotEfficiency": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "CarnotEfficiency"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_JouleThomson": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "JouleThomson"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_HeatCapacityCalculator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "HeatCapacityCalculator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_HeatCapacityLookup": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "HeatCapacityLookup"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BoltzmannDistribution": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BoltzmannDistribution"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_MaxwellBoltzmannSpeed": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "MaxwellBoltzmannSpeed"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_FermiDiracDistribution": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "FermiDiracDistribution"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_BoseEinsteinDistribution": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "BoseEinsteinDistribution"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EquipartitionTheorem": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EquipartitionTheorem"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_PartitionFunction": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "PartitionFunction"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_AdvancedPartitionFunction": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "AdvancedPartitionFunction"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_StatisticalEnsemble": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "StatisticalEnsemble"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_StatisticalEntropy": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "StatisticalEntropy"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_TemperatureJumpRelaxation": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "TemperatureJumpRelaxation"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_EvaporationEstimator": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "EvaporationEstimator"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_GibbsAdsorption": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "GibbsAdsorption"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_LangmuirIsotherm": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "LangmuirIsotherm"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    },
+    "ChemMCP_FreundlichIsotherm": {
+      "command": "/home/wave/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/home/wave/ChemMCP",
+        "run",
+        "-m",
+        "chemmcp",
+        "--tools",
+        "FreundlichIsotherm"
+      ],
+      "cwd": "/home/wave/ChemMCP"
+    }
+  }
+}
